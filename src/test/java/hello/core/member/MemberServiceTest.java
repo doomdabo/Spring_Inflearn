@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
     
-    MemberService memberService; 
+    MemberService memberService;
     @BeforeEach
     public void beforeEach(){
         AppConfig appConfig= new AppConfig();
-        appConfig.memberService();
+        memberService=appConfig.memberService();
     }
     @Test
     void join(){
