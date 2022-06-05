@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Slf4j
 public class LogTestController {
     private final Logger log = LoggerFactory.getLogger(getClass());
 
@@ -19,7 +18,7 @@ public class LogTestController {
         log.info("info log = {}", name);
         log.warn("warn log={}", name);
         log.error("error log={}", name);
-        //위 순서로, 로그 레벨에 따라 info면 info,warn, error이렇게 세개 나옴
+        //위 순서로, 로그 레벨에 따라 info면 info,warn, error이렇게 세개 나
         return "ok";
 
     }
