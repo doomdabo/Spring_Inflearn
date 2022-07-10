@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/mapping/users")
 public class MappingClassController {
     @GetMapping
-    public String user(){
+    public String users(){
         return "get users";
     }
-    @GetMapping
+    @PostMapping
     public String addUser(){
         return "post user";
     }
